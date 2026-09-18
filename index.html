@@ -16,20 +16,20 @@
     }
     .card {
       background: #ffffff;
-      padding: 36px 24px;
+      padding: 32px 24px;
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       text-align: center;
       max-width: 320px;
       width: 90%;
     }
-    h1 { margin: 0 0 6px; font-size: 1.35rem; color: #111; }
-    p { margin: 0 0 24px; color: #555; font-size: 0.95rem; }
+    h1 { margin: 0 0 4px; font-size: 1.35rem; color: #111; }
+    p.title { margin: 0 0 20px; color: #555; font-size: 0.95rem; }
     .btn {
       display: block;
       width: 100%;
       padding: 12px 0;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
@@ -37,15 +37,24 @@
       box-sizing: border-box;
     }
     .btn-save { background: #0070f3; color: #fff; }
+    .btn-secondary { background: #f0f2f5; color: #1f2937; }
     .btn-linkedin { background: #0a66c2; color: #fff; }
+    .hint { font-size: 0.78rem; color: #777; margin: -4px 0 16px; }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Phil Maloney</h1>
-    <p>Enterprise Account Executive &bull; Dialogue</p>
-    <a href="contact.vcf" class="btn btn-save" download>Save Contact</a>
-    <a href="https://www.linkedin.com/in/philmaloneycalgary" class="btn btn-linkedin" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    <p class="title">Enterprise Account Executive &bull; Dialogue</p>
+
+    <!-- Save Contact Button -->
+    <a href="contact.vcf" class="btn btn-save">Save Contact</a>
+    <p class="hint">Tap <strong>Open</strong> when the file downloads to save</p>
+
+    <!-- Direct Actions -->
+    <a href="tel:+1 403 999 4494" class="btn btn-secondary">Call Mobile</a>
+    <a href="mailto:philip.maloney@dialogue.co" class="btn btn-secondary">Send Email</a>
+    <a href="https://www.linkedin.com/in/philmaloneycalgary/" class="btn btn-linkedin" target="_blank" rel="noopener">Connect on LinkedIn</a>
   </div>
 </body>
 </html>
